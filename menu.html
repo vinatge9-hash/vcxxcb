@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Brew & Beans Menu | Fresh Coffee & Pastries</title>
+  <meta name='description' content='Explore the Brew & Beans menu featuring specialty coffees, pastries, and seasonal drinks made with care.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
+    body { font-family: 'Open Sans', sans-serif; color: #1f2937; }
+    h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+    .animate-fadeIn { animation: fadeIn 0.6s ease-out forwards; opacity: 0; }
+    @keyframes fadeIn { to { opacity: 1; } }
+  </style>
+</head>
+<body class='antialiased'>
+  <header class='bg-white shadow sticky top-0 z-50'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between'>
+      <div class='flex items-center'>
+        <span class='text-2xl font-bold text-gray-800'>Brew & Beans</span>
+        <span class='ml-2 text-sm text-gray-500'>Coffee Co.</span>
+      </div>
+      <div class='hidden md:flex space-x-4'>
+        <a href='index.html' class='text-gray-800 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'>Home</a>
+        <a href='about.html' class='text-gray-800 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'>About</a>
+        <a href='menu.html' class='text-gray-800 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'>Menu</a>
+        <a href='contact.html' class='text-gray-800 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'>Contact</a>
+      </div>
+      <div class='md:hidden'>
+        <button id='mobile-menu-button' class='text-gray-800 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500 transition-all duration-300' aria-label='Open mobile menu'>
+          <i class='fas fa-bars'></i>
+        </button>
+      </div>
+    </nav>
+    <div id='mobile-menu' class='md:hidden hidden bg-white border-t border-gray-200'>
+      <div class='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
+        <a href='index.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100 transition-all duration-300'>Home</a>
+        <a href='about.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100 transition-all duration-300'>About</a>
+        <a href='menu.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100 transition-all duration-300'>Menu</a>
+        <a href='contact.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100 transition-all duration-300'>Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id='main-content'>
+    <section class='py-16 bg-white'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <h1 class='text-4xl font-bold text-gray-800 mb-6'>Our Coffee & Pastry Menu</h1>
+        <p class='text-gray-700 lead mb-8'>A thoughtfully crafted menu featuring single-origin coffees, espresso-based drinks, and house-made pastries. Each item is described with tasting notes to help you choose your perfect cup. We rotate beans seasonally to highlight fresh flavors and support sustainable farming practices.</p>
+        <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+          <!-- Item 1 -->
+          <div class='bg-white rounded-lg p-6 shadow hover:shadow-2xl transition-all duration-300'>
+            <img src='https://images.unsplash.com/photo-1678569187178-eab3ece6f778?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxsYXR0ZSUyMGFydCUyMGNsb3NlLXVwfGVufDB8MHx8fDE3NTk1MDg0MTB8MA&ixlib=rb-4.1.0&q=80&w=1080' alt='Latte with intricate latte art' class='w-full h-40 object-cover rounded mb-3'>
+            <h3 class='text-lg font-semibold text-gray-800 mb-1'>Latte</h3>
+            <p class='text-sm text-gray-600 mb-2'>Creamy milk, smooth espresso, with your choice of milk</p>
+            <div class='flex items-center justify-between'>
+              <span class='font-semibold'>$4.50</span>
+              <span class='text-xs text-gray-500'>Milk options included</span>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class='bg-white rounded-lg p-6 shadow hover:shadow-2xl transition-all duration-300'>
+            <img src='https://pixabay.com/get/g8a22f45cf3274466e3aa4e3b9abdb7e9a5cb7ab1c8aaf40716de74295613a25ce8dfa941d2a39412c3eb2eda75de801c448d238c314395648bc93b71ab3f4280_640.jpg' alt='Cappuccino topped with foam art' class='w-full h-40 object-cover rounded mb-3'>
+            <h3 class='text-lg font-semibold text-gray-800 mb-1'>Cappuccino</h3>
+            <p class='text-sm text-gray-600 mb-2'>Balanced espresso, velvety foam, sprinkled with cocoa</p>
+            <div class='flex items-center justify-between'>
+              <span class='font-semibold'>$4.75</span>
+              <span class='text-xs text-gray-500'>Aromas of roasted nuts</span>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class='bg-white rounded-lg p-6 shadow hover:shadow-2xl transition-all duration-300'>
+            <img src='https://pixabay.com/get/gdcdaf049ee33f5e39abf6ede2b6550dcd594ed674c83e88fc0cf41ee44c31d1870eaea45548e281a8a877f9a1f6dbf48bb34c596bf9692bde09ff98ac3a84df8_640.jpg' alt='Pour-over coffee in a carafe' class='w-full h-40 object-cover rounded mb-3'>
+            <h3 class='text-lg font-semibold text-gray-800 mb-1'>Drip Coffee</h3>
+            <p class='text-sm text-gray-600 mb-2'>Clean and bright profiles; hot-brewed for pure flavor</p>
+            <div class='flex items-center justify-between'>
+              <span class='font-semibold'>$3.75</span>
+              <span class='text-xs text-gray-500'>Small-batch roast</span>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class='bg-white rounded-lg p-6 shadow hover:shadow-2xl transition-all duration-300'>
+            <img src='https://images.unsplash.com/photo-1736520537688-1f1f06b71605?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8YWxtb25kJTIwY3JvaXNzYW50fGVufDB8MHx8fDE3NTk1MDg0MDh8MA&ixlib=rb-4.1.0&q=80&w=1080' alt='Buttery almond croissant' class='w-full h-40 object-cover rounded mb-3'>
+            <h3 class='text-lg font-semibold text-gray-800 mb-1'>Almond Croissant</h3>
+            <p class='text-sm text-gray-600 mb-2'>Flaky layers with almond cream filling</p>
+            <div class='flex items-center justify-between'>
+              <span class='font-semibold'>$3.50</span>
+              <span class='text-xs text-gray-500'>Freshly baked</span>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class='bg-white rounded-lg p-6 shadow hover:shadow-2xl transition-all duration-300'>
+            <img src='https://pixabay.com/get/g082ccac1ee75db1866ddf309fef483ab39d37a84d291a76da5dbc3ab63fd1fa26a5e06e448c43dcb6265da8cf08866687700e778d6060f990d8dd1daa1c107fd_640.jpg' alt='Blueberry muffin, moist and fruity' class='w-full h-40 object-cover rounded mb-3'>
+            <h3 class='text-lg font-semibold text-gray-800 mb-1'>Blueberry Muffin</h3>
+            <p class='text-sm text-gray-600 mb-2'>Light, fruity, with a sweet crumb topping</p>
+            <div class='flex items-center justify-between'>
+              <span class='font-semibold'>$3.25</span>
+              <span class='text-xs text-gray-500'>Seasonal berries</span>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class='bg-white rounded-lg p-6 shadow hover:shadow-2xl transition-all duration-300'>
+            <img src='https://images.unsplash.com/photo-1647275555839-ca7496e3e85f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8Y2hvY29sYXRlJTIwY3JvaXNzYW50fGVufDB8MHx8fDE3NTk1MDg0MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080' alt='Chocolate croissant with rich chocolate filling' class='w-full h-40 object-cover rounded mb-3'>
+            <h3 class='text-lg font-semibold text-gray-800 mb-1'>Chocolate Croissant</h3>
+            <p class='text-sm text-gray-600 mb-2'>A decadent pastry with cocoa richness</p>
+            <div class='flex items-center justify-between'>
+              <span class='font-semibold'>$3.75</span>
+              <span class='text-xs text-gray-500'>Pairs well with espresso</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-[#6f4e37] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div>
+        <h4 class='text-lg font-semibold mb-2'>Brew & Beans</h4>
+        <p class='text-gray-200'>Unique coffees, house-made pastries, and a welcoming space to savor every sip.</p>
+      </div>
+      <div>
+        <h4 class='text-lg font-semibold mb-2'>Hours</h4>
+        <p>Mon-Fri: 6:30 AM – 6:00 PM</p>
+        <p>Sat-Sun: 7:30 AM – 5:00 PM</p>
+      </div>
+      <div>
+        <h4 class='text-lg font-semibold mb-2'>Find Us</h4>
+        <p>123 Bean Street, Coffee Town</p>
+        <p>(555) 012-3456</p>
+        <p>hello@brewandbeans.example</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js'></script>
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (btn && mobileMenu) { btn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); }
+  </script>
+</body>
+</html>
