@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Brew & Beans Coffee Co. | Home</title>
+  <meta name='description' content='Brew & Beans Coffee Co. is a cozy, modern coffee shop offering freshly roasted beans, pastries, and friendly service in a welcoming space.'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
+    body { font-family: 'Open Sans', sans-serif; color: #1f2937; }
+    h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+    .animate-fadeIn { animation: fadeIn 0.6s ease-out forwards; opacity: 0; }
+    @keyframes fadeIn { to { opacity: 1; } }
+  </style>
+</head>
+<body class='antialiased'>
+  <header class='bg-white shadow sticky top-0 z-50'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between'>
+      <div class='flex items-center'>
+        <span class='text-2xl font-bold text-gray-800'>Brew & Beans</span>
+        <span class='ml-2 text-sm text-gray-500'>Coffee Co.</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class='hidden md:flex space-x-4'>
+        <a href='index.html' class='text-gray-800 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'>Home</a>
+        <a href='about.html' class='text-gray-800 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'>About</a>
+        <a href='menu.html' class='text-gray-800 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'>Menu</a>
+        <a href='contact.html' class='text-gray-800 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300'>Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class='md:hidden'>
+        <button id='mobile-menu-button' class='text-gray-800 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500 transition-all duration-300' aria-label='Open mobile menu'>
+          <i class='fas fa-bars'></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id='mobile-menu' class='md:hidden hidden bg-white border-t border-gray-200'>
+      <div class='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
+        <a href='index.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100 transition-all duration-300'>Home</a>
+        <a href='about.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100 transition-all duration-300'>About</a>
+        <a href='menu.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100 transition-all duration-300'>Menu</a>
+        <a href='contact.html' class='block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100 transition-all duration-300'>Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id='main-content'>
+    <!-- Hero -->
+    <section class='min-h-screen flex items-center justify-center relative bg-cover bg-center' 
+      style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://pixabay.com/get/g3874c01533963effb299c77add97937268e901ff3a99361ec91b647f55720380828a90af805e04fef3b8f1435e1b55b06ed0cec0bf15e705d8049c5e06ca6290_640.jpg');">
+      <div class='relative z-10 max-w-3xl text-center text-white p-6 animate-fadeIn'>
+        <h1 class='text-4xl md:text-5xl font-bold mb-4'>Freshly Roasted, Perfectly Brewed</h1>
+        <p class='text-lg md:text-xl mb-6'>Experience coffee crafted with passion, baked delights, and a welcoming space that invites you to linger. At Brew & Beans, we source top-quality beans, roast in-house, and pour with care.</p>
+        <div class='flex flex-wrap gap-4 justify-center'>
+          <a href='menu.html' class='bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-all duration-300'>View Menu</a>
+          <a href='contact.html' class='border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition-all duration-300'>Visit Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class='py-16 bg-white'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <div class='grid md:grid-cols-3 gap-8 text-center'>
+          <article class='p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-all duration-300'>
+            <div class='text-4xl mb-2 text-yellow-600'><i class='fas fa-coffee'></i></div>
+            <h2 class='text-xl font-semibold mb-2'>Small-Batch Roasts</h2>
+            <p class='text-gray-600'>We roast in small batches to preserve flavor, with beans sourced from sustainable farms around the world.</p>
+          </article>
+          <article class='p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-all duration-300'>
+            <div class='text-4xl mb-2 text-yellow-600'><i class='fas fa-bread-slice'></i></div>
+            <h2 class='text-xl font-semibold mb-2'>Fresh Pastries</h2>
+            <p class='text-gray-600'>Daily pastries baked in-house, from flaky croissants to crumbly cookies, all served warm.</p>
+          </article>
+          <article class='p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition-all duration-300'>
+            <div class='text-4xl mb-2 text-yellow-600'><i class='fas fa-heart'></i></div>
+            <h2 class='text-xl font-semibold mb-2'>Cozy Atmosphere</h2>
+            <p class='text-gray-600'>A warm, friendly space with free Wi‑Fi, ample seating, and inviting lighting for work or conversation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Menu Snippet -->
+    <section class='py-16 bg-gray-50'>
+      <div class='max-w-7xl mx-auto px-4'>
+        <div class='text-center mb-12'>
+          <h2 class='text-3xl font-semibold text-gray-800'>Brew & Beans Highlights</h2>
+          <p class='text-gray-600'>A peek at our most-loved drinks and bites. Explore the full menu for more delicious options.</p>
+        </div>
+        <div class='grid md:grid-cols-3 gap-8'>
+          <div class='bg-white rounded-lg p-6 shadow hover:shadow-2xl transition-all duration-300'>
+            <img src='https://images.pexels.com/photos/207287/pexels-photo-207287.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Latte art close-up on a creamy espresso' class='w-full h-48 object-cover rounded mb-4'>
+            <h3 class='text-lg font-semibold text-gray-800 mb-2'>Latte Art Performance</h3>
+            <p class='text-gray-600'>Silky milk, rich espresso, and artful foam crown every cup.</p>
+          </div>
+          <div class='bg-white rounded-lg p-6 shadow hover:shadow-2xl transition-all duration-300'>
+            <img src='https://images.pexels.com/photos/5357327/pexels-photo-5357327.jpeg?auto=compress&cs=tinysrgb&h=650&w=940' alt='Buttery croissant beside a steaming cup' class='w-full h-48 object-cover rounded mb-4'>
+            <h3 class='text-lg font-semibold text-gray-800 mb-2'>Croissant & Cappuccino</h3>
+            <p class='text-gray-600'>A classic pairing: flaky pastry with a balanced cappuccino.</p>
+          </div>
+          <div class='bg-white rounded-lg p-6 shadow hover:shadow-2xl transition-all duration-300'>
+            <img src='https://images.unsplash.com/photo-1741916540141-f36e29290f28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw0fHxhbG1vbmQlMjBjcm9pc3NhbnR8ZW58MHwwfHx8MTc1OTUwODQwOHww&ixlib=rb-4.1.0&q=80&w=1080' alt='Almond croissant with almond topping' class='w-full h-48 object-cover rounded mb-4'>
+            <h3 class='text-lg font-semibold text-gray-800 mb-2'>Almond Twist</h3>
+            <p class='text-gray-600'>A sweet, nutty pastry with just the right amount of crunch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='bg-[#6f4e37] text-white'>
+    <div class='max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8'>
+      <div>
+        <h4 class='text-lg font-semibold mb-2'>Brew & Beans</h4>
+        <p class='text-gray-200'>A cozy neighborhood coffee shop offering expertly roasted beans, fresh pastries, and a welcoming space.</p>
+      </div>
+      <div>
+        <h4 class='text-lg font-semibold mb-2'>Hours</h4>
+        <p>Mon-Fri: 6:30 AM - 6:00 PM</p>
+        <p>Sat-Sun: 7:30 AM - 5:00 PM</p>
+      </div>
+      <div>
+        <h4 class='text-lg font-semibold mb-2'>Quick Links</h4>
+        <ul class='space-y-2'>
+          <li><a href='menu.html' class='text-white hover:text-yellow-300 transition-all duration-300'>Menu</a></li>
+          <li><a href='about.html' class='text-white hover:text-yellow-300 transition-all duration-300'>About Us</a></li>
+          <li><a href='contact.html' class='text-white hover:text-yellow-300 transition-all duration-300'>Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class='text-lg font-semibold mb-2'>Contact</h4>
+        <p>123 Bean Street, Coffee Town</p>
+        <p>(555) 012-3456</p>
+        <p>hello@brewandbeans.example</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js'></script>
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (btn && mobileMenu) {
+      btn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+
+    // Active link highlight
+    const page = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('nav a, #mobile-menu a').forEach(a => {
+      if (a.getAttribute('href') === page) {
+        a.classList.add('text-yellow-600', 'font-bold');
+      }
+    });
+  </script>
+</body>
+</html>
